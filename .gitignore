@@ -1,0 +1,39 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+src/pages/Dispatch/Dispatch.jsx
+package-lock.json
+notes.txt
+
+/public/media/*.mp4
+public/media/*.mp4
+public/media/1024x768-en.mp4
+public/media/1024x768-fr.mp4
+public/media/1080x810-en.mp4
+public/media/1080x810-fr.mp4
+public/media/1194x834-en.mp4
+public/media/1194x834-fr.mp4
+public/media/1280x800-en.mp4
+public/media/1280x800-fr.mp4
+public/media/1366x1024-en.mp4
+public/media/1366x1024-fr.mp4

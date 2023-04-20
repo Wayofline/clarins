@@ -1,0 +1,16 @@
+.welcome {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 200px;
+    position: initial;
+  }
+  h1{
+    text-align: center;
+  }
+}

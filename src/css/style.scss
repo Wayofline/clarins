@@ -1,0 +1,15 @@
+@import "./colors.scss";
+@import "./font.scss";
+@import "./common.scss";
+@import "../components/AreaButtons/areaButtons";
+@import "../components/VideoButtons/videoButtons";
+@import "../components/ModalDetails/modalDetails";
+
+@import "../pages/Main/main";
+@import "../pages/Welcome/welcome";
+@import "../pages/Loading/loading";
+
+@import "./1024x768.scss";
+@import "./1366x1024.scss";
+@import "./1080x810.scss";
+@import "./1194x834.scss";

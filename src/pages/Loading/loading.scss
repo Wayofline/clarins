@@ -1,0 +1,50 @@
+.loading {
+
+  @extend .noMarginNoPadding;
+  @extend .fullScreen;
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 5rem;
+  justify-content: center;
+
+  .videoContainer{
+    margin: 1rem;
+  }
+
+  video {
+    height: 300px;
+    width: 200px;
+    opacity: 0.1;
+    // display: none;
+  }
+
+  .logo {
+    width: 50%;
+    position: initial;
+  }
+
+  .bar {
+    width: 50%;
+    margin-bottom: 1rem;
+    border: 2px solid #b41132;
+    border-radius: .5rem;
+  }
+
+  small {
+    font-size: .75rem;
+    margin-bottom: .5rem;
+  }
+
+  // .container {
+  //   background-color: pink;
+  // }
+
+  // .barCompleted {
+  //   background-color: lightblue;
+  //   width: 80%;
+  // }
+
+}

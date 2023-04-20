@@ -1,0 +1,94 @@
+.resolution1024x768 {
+
+  .logo {
+    width: 194px;
+    top: 38px;
+    // height: 50px;
+    display: block;
+  }
+
+  .langButton {
+    top: 950px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .areaButton {
+
+    &.btnDoigtsA {
+      left: 148px;
+      top: 452px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &.btnDoigtsB {
+      left: 250px;
+      top: 292px;
+      width: 350px;
+      height: 160px;
+    }
+
+    &.btnCroissant {
+      left: 250px;
+      top: 539px;
+      width: 293px;
+      height: 93px;
+    }
+
+    &.btnPaume {
+      left: 319px;
+      top: 619px;
+      width: 113px;
+      height: 113px;
+    }
+
+    &.btnTalon {
+      left: 326px;
+      top: 734px;
+      width: 167px;
+      height: 81px;
+    }
+
+    &.btnVenus {
+      left: 202px;
+      top: 691px;
+      width: 126px;
+      height: 78px;
+    }
+  }
+
+  .videoButton {
+    width: 142px;
+    height: 40px;
+
+    &.btnDoigts {
+      top: 482px;
+      left: 75px;
+    }
+
+    &.btnCroissant {
+      top: 576px;
+      left: 585px;
+    }
+
+    &.btnPaume {
+      top: 765px;
+      left: 574px;
+    }
+
+    &.btnVenus {
+      top: 829px;
+      left: 49px;
+    }
+
+    &.btnTalon {
+      top: 888px;
+      left: 557px;
+    }
+  }
+
+  .replay {
+    width: 115px;
+  }
+}

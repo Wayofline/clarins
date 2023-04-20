@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.noMarginNoPadding {
+  margin: 0;
+  padding: 0;
+}
+
+.fullScreen{
+  height: 100vh;
+  object-fit: cover;
+  width: 100vw;
+}
+
+.absoluteCentered {
+  left: 50%;
+  transform: translateX(-50%);
+  // z-index: 10;
+}
+
+html,
+body {
+  @extend .noMarginNoPadding;
+  height: 100%;
+  width: 100%;
+  font-family: gotham, Arial, Helvetica, sans-serif;
+  background-color: $bgColor;
+  font-weight: 200;
+  overflow: hidden;
+}
+
+button,
+img{
+  position: absolute;
+  @extend .noMarginNoPadding;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  // border : 1px solid red;
+  display: none;
+}

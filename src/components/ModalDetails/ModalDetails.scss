@@ -1,0 +1,109 @@
+@import "./modalDetailsAnimations.scss";
+
+.modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+
+  &.opening {
+    transform: scaleY(.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+    .modal-background {
+      .modal.visible {
+        transform: scale(0);
+        animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+  }
+
+  &.closing {
+    transform: scale(1);
+    animation: unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+    .modal-background {
+      .modal {
+        animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+  }
+
+  // .modal-background {
+  //   display: table-cell;
+  //   background-color: $modalBgColor;
+  //   text-align: center;
+  //   vertical-align: middle;
+  //   backdrop-filter: blur(2px);
+
+  //   .modal {
+  //     background: white;
+  //     font-weight: 300;
+  //     max-width: 65vw;
+  //     display: grid;
+  //     aspect-ratio: 1;
+  //     margin: auto;
+  //     border-radius: 50%;
+  //     border: 3px solid;
+  //     flex-direction: column;
+  //     grid:
+  //       ". icon ." 30% ". title ." auto ". hr ." 1px ". text. " auto /auto 60% auto;
+  //     display: none;
+
+  //     &.visible {
+  //       display: grid;
+  //     }
+  //   }
+
+  //   h1 {
+  //     grid-area: title;
+  //     color: var(--modalColor);
+  //     font-size: 2.1rem;
+  //     align-self: center;
+  //     line-height: 2.5rem;
+  //   }
+
+  //   hr {
+  //     grid-area: hr;
+  //     width: 20%;
+  //   }
+
+  //   p {
+  //     font-size: 1rem;
+  //     line-height: 22px;
+  //     grid-area: text;
+  //     font-weight: 500;
+  //   }
+
+  //   img {
+  //     grid-area: icon;
+  //     width: 7rem;
+  //     justify-self: center;
+  //     align-self: center;
+  //   }
+  // }
+
+  // .color0 {
+  //   border-color: $modal0 !important;
+  // }
+
+  // .color1 {
+  //   border-color: $modal1 !important;
+  // }
+
+  // .color2 {
+  //   border-color: $modal2 !important;
+  // }
+
+  // .color3 {
+  //   border-color: $modal3 !important;
+  // }
+
+  // .color4 {
+  //   border-color: $modal4 !important;
+  // }
+}
